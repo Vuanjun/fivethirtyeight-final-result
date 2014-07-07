@@ -1,0 +1,64 @@
+li.contact-links-item {
+  margin-top: 50px;
+  text-align: center;
+  display: block;
+  width: 50%;
+  float: left;
+  @include adjust-font-size-to(12px);
+  font-weight: bold;
+  a.contact-links {
+    display: block;
+    padding: 5px 0;
+    background: #E8E8E8;
+    &:hover {
+      color: white;
+      background: #8F8F8F;
+    }
+  }
+  &:nth-child(1){
+    a.contact-links {
+      border-right: 4px solid white;
+      @include at-breakpoint($desktop) {
+        border: none;
+        border-right: 2px solid white;
+      }
+    }
+  }
+  &:nth-child(2){
+    a.contact-links {
+      border-left: 4px solid white;
+      @include at-breakpoint($desktop) {
+        border: none;
+        border-right: 2px solid white;
+      }
+    }
+  }
+  &:nth-child(4){
+    margin-top: 8px;
+    a.contact-links {
+      border-right: 4px solid white;
+      @include at-breakpoint($desktop) {
+        border: none;
+        border-right: 2px solid white;
+      }
+    }
+  }
+  &:nth-child(5){
+    margin-top: 8px;
+    a.contact-links {
+      border-left: 4px solid white;
+      @include at-breakpoint($desktop) {
+        border: none;
+        border-right: none;
+      }
+    }
+  }
+  @include at-breakpoint($desktop) {
+    float: left;
+    width: 20%;
+    margin: 0;
+    display: inline-block;
+    background: #8F8F8F;
+    border: none;
+  }
+}

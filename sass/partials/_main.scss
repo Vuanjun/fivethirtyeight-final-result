@@ -1,0 +1,35 @@
+.main {
+	.photo-wrapper {
+		width: 100%;
+		position: relative;
+		padding-top: 83.33%;
+		img.front-page {
+			background: #D2D2D2;
+			position: absolute;
+			width: 100%;
+			top:0;
+			left:0;
+			display: block;
+      &:hover {
+        cursor: pointer;
+      }
+		}
+    @include trailer(0.5);
+	}
+	.news-group {
+	  @include at-breakpoint($desktop) {
+	    @include span-columns(6, 9);
+	 }
+	}
+	.data-lab {
+		@include at-breakpoint($desktop) {
+		  @include span-columns(3 omega, 9);
+		}
+		@include trailer(1);
+	}
+	.more-story {
+		@include at-breakpoint($desktop) {
+		  @include span-columns(6, 9);
+		}
+	}
+}

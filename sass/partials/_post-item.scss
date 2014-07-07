@@ -1,0 +1,36 @@
+.post-item {
+	a.post-item-topic {
+    @include trailer(0.2);
+		&:before {
+			content: " ";
+			background: #89B640;
+			display: inline-block;
+			width: 12px;
+			height: 12px;
+			margin-right: 5px;
+		}
+		display: block;
+		@include adjust-font-size-to(18px);
+		color: #B4B4B4;
+		font-weight: bold;
+	}
+	a.post-item-title {
+    @include trailer(0.2);
+		display: block;
+		@include adjust-font-size-to(32px, 1.5);
+		font-weight: bold;
+		color:$text-black-dark;
+		&:hover {
+			color: #1675CE;
+		}
+	}
+	a.post-item-author {
+    @include trailer(0.5);
+		display: block;
+		@include adjust-font-size-to(12px);
+		color: $text-black;
+		&:hover {
+			color: #1675CE;
+		}
+	}
+}

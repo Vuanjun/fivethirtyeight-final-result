@@ -1,0 +1,16 @@
+.footer {
+	@include leader(2);
+	border-top: 6px solid #696969;
+	text-align: center;
+}
+
+p.copyright {
+	@include trailer(0.5);
+	@include adjust-font-size-to(11px);
+	color: $text-gray;
+}
+p.powerby {
+	@include leader(0);
+	@include adjust-font-size-to(13px);
+	font-weight: bold;
+}

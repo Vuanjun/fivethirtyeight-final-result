@@ -1,0 +1,69 @@
+.contributor-group {
+  @include pie-clearfix;
+}
+img.contributor {
+  //opacity: .3;
+  @include leader(0.3);
+  @include trailer(0.7);
+  width: 150px;
+  height: auto;
+  float: left;
+  margin-right: 10px;
+  border-radius: 5px;
+  &:hover {
+    cursor: pointer;
+  }
+  @include at-breakpoint($desktop) {
+    width:100px;
+  }
+}
+
+.contributor-item {
+	@include leader(0.5);
+	@include trailer(0.5);
+	@include pie-clearfix;
+	border-bottom: 1px solid #A5A5A5;
+  @include at-breakpoint($pad) {
+    @include span-columns(4);
+    @include nth-omega(2n);
+  }
+  @include at-breakpoint($desktop) {
+    @include span-columns(12);
+  }
+}
+
+
+
+.contributor-info-group {
+  overflow: hidden;
+	a.contributor-name {
+		display: block;
+    letter-spacing: 0.5px;
+		@include adjust-font-size-to(13px);
+		color: $text-black-dark;
+		text-transform: uppercase;
+		border-bottom: 4px solid #D2D2D2;
+	}
+}
+
+ul.contributor-field {
+  @include leader(0.5);
+	display: block;
+	padding-left: 0;
+	list-style-type: none;
+}
+
+li.contributor-field-item {
+	&:before {
+			content: " ";
+			background: #808527;
+			display: inline-block;
+			width: 8px;
+			height: 8px;
+			margin-right: 5px;
+	}
+	color: $text-black;
+	margin-left: 5px;
+	@include adjust-font-size-to(14px, 0.8);
+	font-weight: bold;
+}

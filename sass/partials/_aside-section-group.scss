@@ -1,0 +1,46 @@
+.aside-section-group {
+  .section-photo-wrapper {
+    position: relative;
+    padding-top: 66.66%;
+    img.section {
+      background: #D2D2D2;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      border-radius: 8px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+  }
+	a.section-topic {
+		&:before {
+				content: " ";
+				background: #275FAD;
+				display: inline-block;
+				width: 8px;
+				height: 8px;
+				margin-right: 5px;
+		}
+    cursor: pointer;
+		display: block;
+		@include adjust-font-size-to(14px);
+		color: #B4B4B4;
+		font-weight: bold;
+		@include trailer(0.2);
+	}
+	a.section-title {
+		display: block;
+		@include adjust-font-size-to(16px, 0.8);
+		color: $text-black;
+		font-weight: bold;
+		@include trailer(0.5);
+		cursor: pointer;
+		&:hover {
+			color: #1675CE;
+		}
+	}
+	@include trailer(0.6);
+}

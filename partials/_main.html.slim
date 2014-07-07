@@ -1,0 +1,16 @@
+.news-group
+	.photo-wrapper
+		img.front-page src="http://hhhhold.com/600x500/#{rand(100)}"
+	.hottest-news-post
+		= render "/partials/post-item"
+	- 3.times do
+		= render "/partials/feature-group"
+.data-lab
+	a.category-header href="#" datalab
+	- 20.times do
+		= render "/partials/data-lab-post"
+	a.data-lab-more href="#" more >
+.more-story
+	a.category-header href="#" more stories
+	- 3.times do
+		= render "/partials/feature-group"

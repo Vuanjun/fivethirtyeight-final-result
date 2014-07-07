@@ -1,0 +1,33 @@
+%helvetica {
+  font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  font-weight: normal;
+}
+
+body {
+  @extend %helvetica;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: $text-black;
+}
+
+
+#{headings()} {
+  @include reset-box-model;
+}
+
+a {
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+  }
+  @include link-colors($text-black, #1675CE, red);
+}
+
+p {
+  @include trailer(1);
+}
+
+h1 {
+  @include adjust-font-size-to(70px);
+}

@@ -1,0 +1,28 @@
+.adminbar {
+	@include trailer(1);
+	height: 32px;
+	padding-top: 6px;
+	box-sizing: border-box;
+	@include adjust-font-size-to(11px);
+	font-weight: bold;
+	background: #999;
+	text-align: center;
+	a.dashboard-icon {
+		color: #E1E1E1;
+		cursor: pointer;
+		margin-right: 15px;
+		text-transform: uppercase;
+	}
+	a.follow {
+		color: #E1E1E1;
+		cursor: pointer;
+		margin-right: 15px;
+		text-transform: uppercase;
+	}
+	a.avatar {
+		color: #E1E1E1;
+		cursor: pointer;
+		margin-right: 15px;
+		text-transform: uppercase;
+	}
+}

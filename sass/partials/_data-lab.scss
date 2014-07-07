@@ -1,0 +1,27 @@
+.date-lab-post {
+	p.date {
+		font-size: 11px;
+		color: $text-gray;
+		@include trailer(0);
+	}
+	a.title {
+		display: inline-block;
+		color: $text-black;
+		font-weight: bold;
+		@include trailer(0.4);
+		@include adjust-font-size-to(16px, 0.9);
+		&:hover {
+			color: #1675CE;
+		}
+	}
+	border-bottom: 1px dashed #A5A5A5;
+}
+a.data-lab-more {
+	display: inline-block;
+	text-transform: uppercase;
+	@include leader(0.5);
+	@include adjust-font-size-to(11px);
+	&:hover {
+		color: #1675CE;
+	}
+}

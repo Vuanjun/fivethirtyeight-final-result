@@ -1,0 +1,19 @@
+.aside {
+	@include at-breakpoint($pad) {
+	  .ad {
+	  	@include span-columns(4, 8);
+	  }
+	  .interactive {
+	  	@include span-columns(4 omega, 8);
+	  }
+	}
+	@include at-breakpoint($desktop) {
+	  .ad {
+	  	@include span-columns(3, 3);
+	  }
+	  .interactive {
+	  	@include span-columns(3 omega, 3);
+	  }
+	}
+	
+}

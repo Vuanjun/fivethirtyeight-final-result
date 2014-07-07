@@ -1,0 +1,38 @@
+ul.nav-menu {
+  padding-left: 0;
+	list-style-type: none;
+  @include pie-clearfix;
+  .menu-item {
+    background-color: #333;
+    @include trailer(0.1);
+    text-align: center;
+    @include adjust-font-size-to(15px);
+    font-weight: bold;
+    a {
+      padding: 2px 0;
+      letter-spacing: 0.5px;
+      color: white;
+      display: block;
+      &:hover {
+        text-decoration: none;
+        color: $text-black-dark;
+        background: #ABABAB;
+      }
+    }
+  }
+  .menu-item + .menu-item a {
+    border-left: 2px solid white;
+  }
+
+  // DESKTOP Menu-item Partial
+  @include at-breakpoint($desktop) {
+    .menu-item {
+      float: left;
+      width: 20%;
+      margin: 0;
+      display: inline-block;
+      background-color: #333;
+    }
+  }
+
+}

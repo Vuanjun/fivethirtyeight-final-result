@@ -1,0 +1,29 @@
+ul.footer-contact-links-menu {
+  padding-left: 0;
+  list-style-type: none;
+  position: relative;
+  @include pie-clearfix;
+  li.contact-links-site {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    float: none;
+    display: block;
+    @include trailer(0.5);
+    padding: 5px 0;
+    @include adjust-font-size-to(24px, 1.2);
+    letter-spacing: 1px;
+    font-weight: bold;
+    @include at-breakpoint($desktop) {
+      position: static;
+      float: left;
+      width: 20%;
+      margin-left: 0;
+      a.contact-links {
+        @include adjust-font-size-to(20px);
+      }
+      display: inline-block;
+    }
+  }
+}

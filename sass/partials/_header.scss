@@ -1,0 +1,24 @@
+.header {
+	.sitename {
+		display: block;
+		text-align: center;
+		@include adjust-font-size-to(32px);
+		font-weight: bold;
+		color: $text-black-dark;
+		&:hover {
+			color: #1675CE;
+		}
+	}
+	.header-social-links {
+		text-align: center;
+		padding-left: 0;
+		@include adjust-font-size-to(14px);
+	}
+	.header-nav {
+		text-align: center;
+		@include trailer(1);
+	}
+}
+.header-social-links-item {
+	display: inline-block;
+}

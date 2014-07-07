@@ -1,0 +1,34 @@
+// basic for susy
+$total-columns  : 4;
+$column-width   : 5em;
+$gutter-width   : 1em;
+$grid-padding   : $gutter-width;
+
+// add media
+$pad            : 600px 8;
+$desktop        : 960px 12;
+
+// debug
+//@import "layout-debug";
+
+#{$page-container} {
+  @include container($total-columns, $pad, $desktop);
+}
+
+html, body, .page {
+  height: 100%;
+}
+
+.page {
+	@include at-breakpoint($desktop) {
+	  .main {
+	  	@include span-columns(9, 12);
+	  }
+	  .aside {
+	  	@include span-columns(3 omega, 12);
+	  }
+	  .footer {
+	  	clear: both;
+	  }
+	}
+}
